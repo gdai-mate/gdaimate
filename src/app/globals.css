@@ -1,26 +1,176 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+/* G'dAI Mate Brand Styles */
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Brand Colors */
+    --worksite-gold: #D9B43B;
+    --outback-midnight: #002A3E;
+    --slate-shadow: #1B2838;
+    --eucalypt-mist: #6B8E7A;
+    --off-white: #F9FAFB;
+  }
+
+  body {
+    @apply bg-off-white text-slate-shadow font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Typography Scale */
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-outback-midnight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold tracking-tight text-outback-midnight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold text-outback-midnight;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl font-semibold text-slate-shadow;
+  }
+
+  p {
+    @apply text-slate-shadow leading-relaxed;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-worksite-gold ring-offset-2 ring-offset-off-white;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Button Components */
+  .btn-primary {
+    @apply bg-worksite-gold hover:bg-amber-600 text-outback-midnight font-semibold px-6 py-3 rounded-brand shadow-brand transition-all duration-200 hover:shadow-brand-lg focus:ring-2 focus:ring-worksite-gold focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-outback-midnight hover:bg-slate-shadow text-off-white font-semibold px-6 py-3 rounded-brand shadow-brand transition-all duration-200 hover:shadow-brand-lg focus:ring-2 focus:ring-outback-midnight focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-worksite-gold text-worksite-gold hover:bg-worksite-gold hover:text-outback-midnight font-semibold px-6 py-3 rounded-brand transition-all duration-200;
+  }
+
+  .btn-ghost {
+    @apply text-slate-shadow hover:text-outback-midnight hover:bg-neutral-100 font-medium px-4 py-2 rounded-brand transition-all duration-200;
+  }
+
+  /* Card Components */
+  .card {
+    @apply bg-off-white border border-neutral-200 rounded-brand shadow-brand p-6;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-brand-lg transition-shadow duration-200;
+  }
+
+  .card-dark {
+    @apply bg-outback-midnight text-off-white border-slate-shadow;
+  }
+
+  /* KPI Tiles */
+  .kpi-tile {
+    @apply card p-6 text-center;
+  }
+
+  .kpi-value {
+    @apply text-3xl md:text-4xl font-bold text-outback-midnight;
+  }
+
+  .kpi-label {
+    @apply text-sm text-slate-shadow font-medium mt-2;
+  }
+
+  .kpi-change-positive {
+    @apply text-eucalypt-mist text-sm font-medium flex items-center justify-center mt-1;
+  }
+
+  .kpi-change-negative {
+    @apply text-red-500 text-sm font-medium flex items-center justify-center mt-1;
+  }
+
+  /* Feature Showcase */
+  .feature-card {
+    @apply card-hover p-8 text-center;
+  }
+
+  .feature-icon {
+    @apply w-16 h-16 mx-auto mb-4 p-4 bg-worksite-gold text-outback-midnight rounded-brand;
+  }
+
+  .feature-title {
+    @apply text-xl font-semibold text-outback-midnight mb-3;
+  }
+
+  .feature-description {
+    @apply text-slate-shadow leading-relaxed;
+  }
+
+  /* Upload Area */
+  .upload-area {
+    @apply border-2 border-dashed border-neutral-300 rounded-brand p-8 text-center transition-colors hover:border-worksite-gold hover:bg-amber-50;
+  }
+
+  .upload-area.dragover {
+    @apply border-worksite-gold bg-amber-50;
+  }
+
+  /* Mobile-first responsive utilities */
+  .container-responsive {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .grid-responsive {
+    @apply grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .grid-kpi {
+    @apply grid gap-4 grid-cols-2 md:grid-cols-4;
+  }
+}
+
+@layer utilities {
+  /* Text utilities with Australian tone */
+  .text-aussie-heading {
+    @apply text-outback-midnight font-bold;
+  }
+
+  .text-aussie-body {
+    @apply text-slate-shadow leading-relaxed;
+  }
+
+  .text-gold-accent {
+    @apply text-worksite-gold font-semibold;
+  }
+
+  /* Spacing utilities */
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .hero-padding {
+    @apply pt-20 pb-16 md:pt-32 md:pb-24;
+  }
+
+  /* Background patterns */
+  .bg-hero-pattern {
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(217, 180, 59, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(107, 142, 122, 0.1) 0%, transparent 50%);
+  }
+
+  .bg-dashboard-pattern {
+    background-image: 
+      linear-gradient(45deg, rgba(0, 42, 62, 0.02) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(0, 42, 62, 0.02) 25%, transparent 25%);
+    background-size: 60px 60px;
+  }
 }
