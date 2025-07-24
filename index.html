@@ -92,7 +92,7 @@
         .nav-links {
             display: none;
             list-style: none;
-            gap: 35px;
+            gap: 20px;
         }
 
         .nav-links a {
@@ -1164,7 +1164,7 @@
 
         /* Contact Form Section */
         .contact-form-section {
-            background: #F8F9FA;
+            background: #00324D;
             padding: 80px 0;
         }
 
@@ -1177,14 +1177,16 @@
         .contact-form-content h3 {
             font-size: 2.2rem;
             font-weight: 700;
-            color: #00324D;
+            color: #FCFCFA;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         .contact-form-content p {
             font-size: 1.1rem;
-            color: #666;
+            color: rgba(252, 252, 250, 0.8);
             margin-bottom: 40px;
+            text-align: center;
             line-height: 1.6;
         }
 
@@ -2030,11 +2032,9 @@
                 </a>
                 <ul class="nav-links">
                     <li><a href="#features">Features</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Calculator</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#contact-form">Contact</a></li>
                 </ul>
                 <button class="mobile-menu" id="mobile-menu-btn">☰</button>
             </div>
@@ -2042,11 +2042,9 @@
             <div class="mobile-nav" id="mobile-nav">
                 <ul>
                     <li><a href="#features">Features</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Calculator</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#contact-form">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -2087,44 +2085,145 @@
         </div>
     </section>
 
-    <!-- Features Section - Built for Australian Builders -->
-    <section class="features-section" id="features">
+    <!-- Demo Video Section -->
+    <section id="demo" class="demo-section">
         <div class="container">
-            <div class="features-content">
-                <h2 class="features-title">Built for Australian Builders</h2>
-                <div class="features-grid">
-                    <div class="feature-item expandable-feature-item" data-feature="ai-voice">
-                        <div class="feature-icon">🗣️</div>
-                        <h4>AI Voice Processing</h4>
+            <div class="premium-video-showcase" style="
+                text-align: center; 
+                margin: 60px 0; 
+                padding: 40px 20px;
+                background: linear-gradient(135deg, rgba(242, 178, 48, 0.03) 0%, rgba(242, 178, 48, 0.01) 100%);
+                border-radius: 20px;
+                position: relative;
+            ">
+                <div style="
+                    position: absolute;
+                    top: -2px;
+                    left: -2px;
+                    right: -2px;
+                    bottom: -2px;
+                    background: linear-gradient(135deg, #F2B230 0%, #E6A625 50%, #00324D 100%);
+                    border-radius: 22px;
+                    z-index: -1;
+                    opacity: 0.1;
+                "></div>
+                
+                <div class="video-header" style="margin-bottom: 30px;">
+                    <div style="
+                        display: inline-block;
+                        background: linear-gradient(135deg, #F2B230 0%, #E6A625 100%);
+                        color: #00324D;
+                        padding: 8px 20px;
+                        border-radius: 25px;
+                        font-size: 0.85rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        margin-bottom: 15px;
+                        box-shadow: 0 4px 15px rgba(242, 178, 48, 0.3);
+                    ">
+                        🎬 Live Demo
                     </div>
-                    <div class="feature-item expandable-feature-item" data-feature="automation">
-                        <div class="feature-icon">🤖</div>
-                        <h4>Smart Automation</h4>
-                    </div>
-                    <div class="feature-item expandable-feature-item" data-feature="australian">
-                        <div class="feature-icon">🦘</div>
-                        <h4>100% Australian Built</h4>
+                    <h3 style="
+                        color: #00324D; 
+                        font-size: 2.2em; 
+                        font-weight: 700;
+                        margin: 0;
+                        line-height: 1.2;
+                    ">See G'd AI Transform Your Workflow</h3>
+                </div>
+                
+                <div class="premium-video-container" style="
+                    position: relative; 
+                    max-width: 900px; 
+                    margin: 0 auto; 
+                    border-radius: 16px; 
+                    overflow: hidden; 
+                    box-shadow: 
+                        0 25px 50px rgba(0, 50, 77, 0.15),
+                        0 15px 35px rgba(0, 50, 77, 0.1),
+                        0 5px 15px rgba(0, 0, 0, 0.1);
+                    background: linear-gradient(135deg, #F2B230, #E6A625, #00324D);
+                    padding: 4px;
+                ">
+                    <div style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        height: 4px;
+                        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+                        animation: shimmer 3s ease-in-out infinite;
+                        pointer-events: none;
+                        z-index: 2;
+                    "></div>
+                    <div style="
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 4px;
+                        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+                        animation: shimmer 3s ease-in-out infinite;
+                        animation-delay: 1.5s;
+                        pointer-events: none;
+                        z-index: 2;
+                    "></div>
+                    <div style="
+                        position: absolute;
+                        top: 4px;
+                        left: 0;
+                        bottom: 4px;
+                        width: 4px;
+                        background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+                        animation: shimmer 3s ease-in-out infinite;
+                        animation-delay: 0.75s;
+                        pointer-events: none;
+                        z-index: 2;
+                    "></div>
+                    <div style="
+                        position: absolute;
+                        top: 4px;
+                        right: 0;
+                        bottom: 4px;
+                        width: 4px;
+                        background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+                        animation: shimmer 3s ease-in-out infinite;
+                        animation-delay: 2.25s;
+                        pointer-events: none;
+                        z-index: 2;
+                    "></div>
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; background: #000; border-radius: 12px; overflow: hidden;">
+                        <iframe 
+                            src="https://www.loom.com/embed/346b23aa4cfb48049c50cff481f067b6?sid=936b5c48-6f7b-4fe9-84ea-5ea179da341d" 
+                            frameborder="0" 
+                            webkitallowfullscreen 
+                            mozallowfullscreen 
+                            allowfullscreen 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                            title="G'd AI Demo - Revolutionizing Quote Generation for Small Construction Companies">
+                        </iframe>
                     </div>
                 </div>
                 
-                <!-- Expanded content box for Features -->
-                <div class="feature-expanded-content" id="feature-expanded">
-                    <div class="feature-content-item" id="ai-voice-content">
-                        <h5>AI Voice Processing</h5>
-                        <p>Just talk into your phone like you're explaining the job to a mate. Our advanced AI understands construction terminology, Australian slang, and technical details. It converts your voice into professional quotes, site notes, and reports without you typing a single word.</p>
-                    </div>
-                    <div class="feature-content-item" id="automation-content">
-                        <h5>Smart Automation</h5>
-                        <p>G'd AI handles the repetitive stuff that keeps you working late. Automatic quote generation, admin task processing, document creation, and follow-ups. The system learns your preferences and gets smarter over time, so you can focus on the tools, not the paperwork.</p>
-                    </div>
-                    <div class="feature-content-item" id="australian-content">
-                        <h5>100% Australian Built</h5>
-                        <p>Designed by Aussie builders for Aussie builders. We understand local regulations, industry standards, and how business gets done down under. Your data stays in Australia, support is provided by locals who speak your language, and the system works the way you work.</p>
-                    </div>
-                </div>
+                <p style="
+                    text-align: center;
+                    margin-top: 20px;
+                    color: #00324D;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    max-width: 700px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    line-height: 1.5;
+                ">
+                    See the system that turns a 5-hour task into 5 minutes. 
+                    Simply walk the job site, talk to your AI assistant, and get a client-ready quote in under 2 minutes.
+                </p>
             </div>
         </div>
     </section>
+
 
     <!-- How It Works Section (Detailed Features) -->
     <section id="how-it-works" class="features features-colored">
@@ -2403,451 +2502,9 @@
                                 <div class="equiv-label">extra hours fishing<br><span class="equiv-period">per year</span></div>
                             </div>
                             <div class="equivalent-card enjoyment">
-                                <div class="equiv-icon">🔨</div>
-                                <div class="equiv-number" id="enjoyment-equivalent">$180</div>
-                                <div class="equiv-label">per week for your enjoyment<br><span class="equiv-period">spend how you'd like</span></div>
-                            </div>
-                            <div class="equivalent-card computer">
-                                <div class="equiv-icon">💻</div>
-                                <div class="equiv-number" id="computer-equivalent">156</div>
-                                <div class="equiv-label">days away from computer<br><span class="equiv-period">per year</span></div>
-                            </div>
-                            <div class="equivalent-card hawaii">
                                 <div class="equiv-icon">✈️</div>
-                                <div class="equiv-number" id="hawaii-equivalent">3</div>
-                                <div class="equiv-label">return flights to Hawaii<br><span class="equiv-period">per year</span></div>
-                            </div>
-                            <div class="equivalent-card life">
-                                <div class="equiv-icon">⏳</div>
-                                <div class="equiv-number" id="life-equivalent">78</div>
-                                <div class="equiv-label">weeks of your life back<br><span class="equiv-period">over 3 years</span></div>
-                            </div>
-                        </div>
-                        <div class="equivalents-summary">
-                            <p><strong>Translation:</strong> You'll have your life back while making more money. Fair dinkum!</p>
-                        </div>
-                    </div>
-
-                    <!-- Business Trajectory Chart -->
-                    <div class="trajectory-section">
-                        <h4>Your Business Trajectory: With G'd AI vs Without</h4>
-                        <div class="chart-container">
-                            <div class="trajectory-chart">
-                                <svg id="trajectory-svg" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-                                    <!-- Chart background -->
-                                    <rect width="800" height="400" fill="rgba(0, 50, 77, 0.1)" rx="10"/>
-                                    
-                                    <!-- Grid lines -->
-                                    <g class="grid-lines" stroke="rgba(252, 252, 250, 0.2)" stroke-width="1">
-                                        <!-- Horizontal grid lines -->
-                                        <line x1="100" y1="80" x2="750" y2="80"/>
-                                        <line x1="100" y1="160" x2="750" y2="160"/>
-                                        <line x1="100" y1="240" x2="750" y2="240"/>
-                                        <line x1="100" y1="320" x2="750" y2="320"/>
-                                        
-                                        <!-- Vertical grid lines -->
-                                        <line x1="200" y1="60" x2="200" y2="340"/>
-                                        <line x1="350" y1="60" x2="350" y2="340"/>
-                                        <line x1="500" y1="60" x2="500" y2="340"/>
-                                        <line x1="650" y1="60" x2="650" y2="340"/>
-                                    </g>
-                                    
-                                    <!-- Chart labels for clarity -->
-                                    <text x="400" y="380" text-anchor="middle" fill="#FCFCFA" font-size="14" opacity="0.7">Timeline (Months)</text>
-                                    <text x="30" y="200" text-anchor="middle" fill="#FCFCFA" font-size="14" opacity="0.7" transform="rotate(-90 30 200)">Business Growth</text>
-                                    
-                                    <!-- Key month markers -->
-                                    <g fill="#FCFCFA" font-size="11" text-anchor="middle" opacity="0.6">
-                                        <text x="100" y="355">Start</text>
-                                        <text x="350" y="355">G'd AI</text>
-                                        <text x="650" y="355">12 Months</text>
-                                    </g>
-                                    
-                                    
-                                    <!-- Implementation point marker -->
-                                    <g id="implementation-point">
-                                        <line x1="350" y1="60" x2="350" y2="340" stroke="#F2B230" stroke-width="3" stroke-dasharray="5,5"/>
-                                        <text x="355" y="50" fill="#F2B230" font-size="12" font-weight="bold">G'd AI Implemented</text>
-                                    </g>
-                                    
-                                    <!-- Without AI line (flat/declining) -->
-                                    <path id="without-ai-line" 
-                                          stroke="#ff6b6b" 
-                                          stroke-width="4" 
-                                          fill="none" 
-                                          stroke-linecap="round"
-                                          d="M100,240 L200,245 L300,250 L400,255 L500,260 L600,270 L700,280 L750,285"/>
-                                    
-                                    <!-- With AI line (steep upward) -->
-                                    <path id="with-ai-line" 
-                                          stroke="#4ecdc4" 
-                                          stroke-width="4" 
-                                          fill="none" 
-                                          stroke-linecap="round"
-                                          d="M100,240 L200,245 L300,250 L350,250 L450,200 L550,150 L650,100 L750,80"/>
-                                    
-                                    <!-- Data points -->
-                                    <g id="data-points">
-                                        <!-- Without AI points -->
-                                        <circle cx="750" cy="285" r="6" fill="#ff6b6b"/>
-                                        
-                                        <!-- With AI points -->
-                                        <circle cx="750" cy="80" r="6" fill="#4ecdc4"/>
-                                    </g>
-                                    
-                                    <!-- Legend -->
-                                    <g id="legend">
-                                        <rect x="500" y="20" width="200" height="70" fill="rgba(0, 50, 77, 0.8)" rx="5"/>
-                                        <line x1="520" y1="35" x2="560" y2="35" stroke="#ff6b6b" stroke-width="3"/>
-                                        <text x="570" y="40" fill="#FCFCFA" font-size="12">Without G'd AI</text>
-                                        
-                                        <line x1="520" y1="55" x2="560" y2="55" stroke="#4ecdc4" stroke-width="3"/>
-                                        <text x="570" y="60" fill="#FCFCFA" font-size="12">With G'd AI</text>
-                                    </g>
-                                    
-                                    
-                                    <!-- Difference callout -->
-                                    <g id="difference-callout">
-                                        <rect x="600" y="120" width="140" height="60" fill="rgba(242, 178, 48, 0.9)" rx="8"/>
-                                        <text x="670" y="140" text-anchor="middle" fill="#00324D" font-size="12" font-weight="bold">Growth Potential:</text>
-                                        <text x="670" y="155" text-anchor="middle" fill="#00324D" font-size="16" font-weight="bold" id="extra-revenue-text">$65k/year</text>
-                                        <text x="670" y="170" text-anchor="middle" fill="#00324D" font-size="10">with G'd AI</text>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="trajectory-explanation">
-                                <p><strong>The Gap Keeps Growing:</strong> While competitors stay stuck in admin hell, you're building an empire. That's the power of getting your time back.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Implementation CTA -->
-                    <div class="implementation-cta">
-                        <div class="cta-message">
-                            <h4>You Have Two Choices for the Next Year...</h4>
-                            <div class="choice-container">
-                                <div class="bad-choice">
-                                    <div class="choice-icon">😵‍💫</div>
-                                    <p><strong>Choice 1:</strong> Spend <span id="computer-days-cta">156 days</span> staring at screens doing work a robot could do</p>
-                                </div>
-                                <div class="choice-divider">OR</div>
-                                <div class="good-choice">
-                                    <div class="choice-icon">🚀</div>
-                                    <p><strong>Choice 2:</strong> Get your <span id="life-weeks-cta">78 weeks</span> back over 3 years and let AI handle the boring stuff</p>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="https://calendly.com/asgard-gdaimate/discovery" class="cta-button primary pulse">
-                            <span class="cta-icon">📅</span>
-                            Get Your Free Chat
-                            <span class="cta-subtext">30-minute implementation consultation</span>
-                        </a>
-                    </div>
-
-                    <!-- Enhanced Trust Indicators -->
-                    <div class="trust-indicators">
-                        <div class="trust-item">
-                            <span class="trust-number">100%</span>
-                            <span class="trust-text">Free Consultation</span>
-                        </div>
-                        <div class="trust-item">
-                            <span class="trust-number">0%</span>
-                            <span class="trust-text">Sales Pressure</span>
-                        </div>
-                        <div class="trust-item">
-                            <span class="trust-number">100% 🦘</span>
-                            <span class="trust-text">Australian Made</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose G'd AI Mate Section -->
-    <section id="benefits" class="why benefits-colored">
-        <div class="container">
-            <h2 class="section-title">Why Choose G'd ai Mate?</h2>
-            <ul class="why-list">
-                <li><strong>Finish jobs faster</strong> – Instant quoting, scheduling and one button ordering can cut delays and costs.</li>
-                <li><strong>Slash costly rework</strong> – AI catches design or spec clashes early; keep profit in your pocket.</li>
-                <li><strong>Save admin hours every day</strong> – Log RFIs, variations, and safety notes by voice while you work.</li>
-                <li><strong>Win more bids</strong> – Early adopters of AI impress clients and stand out from the pack.</li>
-                <li><strong>Built for small businesses</strong> – Pay only for what you use; no bloated "all‑in‑one" software.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Demo Video Section -->
-    <section id="demo" class="demo-section">
-        <div class="container">
-            <div class="premium-video-showcase" style="
-                text-align: center; 
-                margin: 60px 0; 
-                padding: 40px 20px;
-                background: linear-gradient(135deg, rgba(242, 178, 48, 0.03) 0%, rgba(242, 178, 48, 0.01) 100%);
-                border-radius: 20px;
-                position: relative;
-            ">
-                <div style="
-                    position: absolute;
-                    top: -2px;
-                    left: -2px;
-                    right: -2px;
-                    bottom: -2px;
-                    background: linear-gradient(135deg, #F2B230 0%, #E6A625 50%, #00324D 100%);
-                    border-radius: 22px;
-                    z-index: -1;
-                    opacity: 0.1;
-                "></div>
-                
-                <div class="video-header" style="margin-bottom: 30px;">
-                    <div style="
-                        display: inline-block;
-                        background: linear-gradient(135deg, #F2B230 0%, #E6A625 100%);
-                        color: #00324D;
-                        padding: 8px 20px;
-                        border-radius: 25px;
-                        font-size: 0.85rem;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        letter-spacing: 1px;
-                        margin-bottom: 15px;
-                        box-shadow: 0 4px 15px rgba(242, 178, 48, 0.3);
-                    ">
-                        🎬 Live Demo
-                    </div>
-                    <h3 style="
-                        color: #00324D; 
-                        font-size: 2.2em; 
-                        font-weight: 700;
-                        margin: 0;
-                        line-height: 1.2;
-                    ">See G'd AI Transform Your Workflow</h3>
-                </div>
-                
-                <div class="premium-video-container" style="
-                    position: relative; 
-                    max-width: 900px; 
-                    margin: 0 auto; 
-                    border-radius: 16px; 
-                    overflow: hidden; 
-                    box-shadow: 
-                        0 25px 50px rgba(0, 50, 77, 0.15),
-                        0 15px 35px rgba(0, 50, 77, 0.1),
-                        0 5px 15px rgba(0, 0, 0, 0.1);
-                    background: linear-gradient(135deg, #F2B230, #E6A625, #00324D);
-                    padding: 4px;
-                ">
-                    <div style="
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        height: 4px;
-                        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-                        animation: shimmer 3s ease-in-out infinite;
-                        pointer-events: none;
-                        z-index: 2;
-                    "></div>
-                    <div style="
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        height: 4px;
-                        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-                        animation: shimmer 3s ease-in-out infinite;
-                        animation-delay: 1.5s;
-                        pointer-events: none;
-                        z-index: 2;
-                    "></div>
-                    <div style="
-                        position: absolute;
-                        top: 4px;
-                        left: 0;
-                        bottom: 4px;
-                        width: 4px;
-                        background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-                        animation: shimmer 3s ease-in-out infinite;
-                        animation-delay: 0.75s;
-                        pointer-events: none;
-                        z-index: 2;
-                    "></div>
-                    <div style="
-                        position: absolute;
-                        top: 4px;
-                        right: 0;
-                        bottom: 4px;
-                        width: 4px;
-                        background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-                        animation: shimmer 3s ease-in-out infinite;
-                        animation-delay: 2.25s;
-                        pointer-events: none;
-                        z-index: 2;
-                    "></div>
-                    <div style="position: relative; padding-bottom: 56.25%; height: 0; background: #000; border-radius: 12px; overflow: hidden;">
-                        <iframe 
-                            src="https://www.loom.com/embed/346b23aa4cfb48049c50cff481f067b6?sid=936b5c48-6f7b-4fe9-84ea-5ea179da341d" 
-                            frameborder="0" 
-                            webkitallowfullscreen 
-                            mozallowfullscreen 
-                            allowfullscreen 
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                            title="G'd AI Demo - Revolutionizing Quote Generation for Small Construction Companies">
-                        </iframe>
-                    </div>
-                </div>
-                
-                <p style="
-                    text-align: center;
-                    margin-top: 20px;
-                    color: #00324D;
-                    font-size: 1.1rem;
-                    font-weight: 500;
-                    max-width: 700px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    line-height: 1.5;
-                ">
-                    See the system that turns a 5-hour task into 5 minutes. 
-                    Simply walk the job site, talk to your AI assistant, and get a client-ready quote in under 2 minutes.
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Contact/Calculator Section - Moved to improve flow -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="calculator-hero">
-                <h2 class="hero-title">Win Back Your Time - See How Much You Could Gain</h2>
-                <p class="hero-subtitle">Stop working nights on quotes. Get your weekends back. See your potential savings.</p>
-                
-                <!-- Time Savings Calculator -->
-                <div class="calculator-container" id="calculator-container">
-                    <div class="calculator-header">
-                        <h3>Calculate Your Time Savings</h3>
-                        <p>Drag the sliders below to match your current situation and see your potential time and revenue savings in real-time</p>
-                    </div>
-                    <div class="calculator-inputs">
-                        <div class="input-group">
-                            <label for="hours-per-week">Hours spent per week on admin tasks:</label>
-                            <div class="slider-container">
-                                <input type="range" id="hours-per-week" min="5" max="15" value="10" oninput="updateCalculator()">
-                                <span class="slider-value" id="hours-value">10 hours</span>
-                            </div>
-                        </div>
-
-                        <div class="input-group">
-                            <label for="hourly-rate">Your average hourly rate:</label>
-                            <div class="slider-container">
-                                <input type="range" id="hourly-rate" min="50" max="200" step="25" value="75" oninput="updateCalculator()">
-                                <span class="slider-value" id="rate-value">$75/hour</span>
-                            </div>
-                        </div>
-
-                        <div class="input-group">
-                            <label for="quotes-per-month">Number of quotes per month:</label>
-                            <div class="slider-container">
-                                <input type="range" id="quotes-per-month" min="1" max="30" value="15" oninput="updateCalculator()">
-                                <span class="slider-value" id="quotes-value">25 quotes</span>
-                            </div>
-                        </div>
-
-                        <div class="input-group">
-                            <label for="current-time">Time spent per quote:</label>
-                            <div class="slider-container">
-                                <input type="range" id="current-time" min="0.5" max="8" step="0.5" value="3" oninput="updateCalculator()">
-                                <span class="slider-value" id="time-value">3 hours</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Live Results Display -->
-                    <div class="results-display" id="results-display">
-                        <div class="result-card primary weekly-hours">
-                            <div class="result-number" id="weekly-hours">12</div>
-                            <div class="result-label">Hours Saved Every Week</div>
-                        </div>
-                        <div class="result-card secondary main-result">
-                            <div class="result-number" id="monthly-revenue">$3,600</div>
-                            <div class="result-label">More Billable Time Monthly</div>
-                        </div>
-                        <div class="result-card tertiary main-result">
-                            <div class="result-number" id="annual-impact">$43,200</div>
-                            <div class="result-label">Growth Potential Annually</div>
-                        </div>
-                    </div>
-
-                    <!-- Email Capture Button -->
-                    <div class="calculator-cta">
-                        <button class="cta-button primary pulse" onclick="showDetailedResults()" id="get-report-btn">
-                            <span class="cta-icon">📊</span>
-                            See Your Detailed Savings Report
-                        </button>
-                    </div>
-                </div>
-
-
-                <!-- Enhanced Results & Charts Section (Hidden by default) -->
-                <div class="enhanced-results-section" id="booking-section" style="display: none;">
-                    <div class="results-header">
-                        <button class="back-button" onclick="goBackToCalculator()">← Edit My Inputs</button>
-                        <h3>Your Detailed Savings Report</h3>
-                        <div class="personal-intro">
-                            <p><strong><span id="final-name">Builder</span></strong>, here's exactly how G'd AI transforms your business:</p>
-                        </div>
-                    </div>
-
-                    <!-- Key Metrics Dashboard -->
-                    <div class="metrics-dashboard">
-                        <div class="metric-card primary">
-                            <div class="metric-icon">⏰</div>
-                            <div class="metric-number" id="final-annual-hours">624 hours</div>
-                            <div class="metric-label">saved every year</div>
-                        </div>
-                        <div class="metric-card secondary">
-                            <div class="metric-icon">💰</div>
-                            <div class="metric-number" id="final-annual">$43,200</div>
-                            <div class="metric-label">growth potential annually</div>
-                        </div>
-                        <div class="metric-card tertiary">
-                            <div class="metric-icon">🚀</div>
-                            <div class="metric-number" id="efficiency-multiplier">2.3x</div>
-                            <div class="metric-label">more efficient than competitors</div>
-                        </div>
-                    </div>
-
-                    <!-- Fun Tradie Equivalents -->
-                    <div class="tradie-equivalents-section">
-                        <h4>Here's What That Actually Means for You, Mate</h4>
-                        <div class="equivalents-grid">
-                            <div class="equivalent-card beer">
-                                <div class="equiv-icon">🍺</div>
-                                <div class="equiv-number" id="beer-equivalent">48</div>
-                                <div class="equiv-label">hours for coldies at the pub<br><span class="equiv-period">per month</span></div>
-                            </div>
-                            <div class="equivalent-card pie">
-                                <div class="equiv-icon">🥧</div>
-                                <div class="equiv-number" id="pie-equivalent">720</div>
-                                <div class="equiv-label">meat pies you could buy<br><span class="equiv-period">per year</span></div>
-                            </div>
-                            <div class="equivalent-card fishing">
-                                <div class="equiv-icon">🎣</div>
-                                <div class="equiv-number" id="fishing-equivalent">156</div>
-                                <div class="equiv-label">extra hours fishing<br><span class="equiv-period">per year</span></div>
-                            </div>
-                            <div class="equivalent-card enjoyment">
-                                <div class="equiv-icon">💸</div>
                                 <div class="equiv-number" id="enjoyment-equivalent">$180</div>
                                 <div class="equiv-label">per week for your enjoyment<br><span class="equiv-period">spend how you'd like</span></div>
-                            </div>
-                            <div class="equivalent-card computer">
-                                <div class="equiv-icon">💻</div>
-                                <div class="equiv-number" id="computer-equivalent">156</div>
-                                <div class="equiv-label">days away from computer<br><span class="equiv-period">per year</span></div>
                             </div>
                             <div class="equivalent-card hawaii">
                                 <div class="equiv-icon">🏝️</div>
@@ -2965,7 +2622,7 @@
                             <div class="choice-container">
                                 <div class="bad-choice">
                                     <div class="choice-icon">😵‍💫</div>
-                                    <p><strong>Choice 1:</strong> Spend <span id="computer-days-cta">156 days</span> staring at screens doing work a robot could do</p>
+                                    <p><strong>Choice 1:</strong> Spend <span id="computer-days-cta">156 days</span> staring at screens doing work a robot could take care of</p>
                                 </div>
                                 <div class="choice-divider">OR</div>
                                 <div class="good-choice">
@@ -2998,6 +2655,20 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Why Choose G'd AI Mate Section -->
+    <section id="benefits" class="why benefits-colored">
+        <div class="container">
+            <h2 class="section-title">Why Choose G'd ai Mate?</h2>
+            <ul class="why-list">
+                <li><strong>Finish jobs faster</strong> – Instant quoting, scheduling and one button ordering can cut delays and costs.</li>
+                <li><strong>Slash costly rework</strong> – AI catches design or spec clashes early; keep profit in your pocket.</li>
+                <li><strong>Save admin hours every day</strong> – Log RFIs, variations, and safety notes by voice while you work.</li>
+                <li><strong>Win more bids</strong> – Early adopters of AI impress clients and stand out from the pack.</li>
+                <li><strong>Built for small businesses</strong> – Pay only for what you use; no bloated "all‑in‑one" software.</li>
+            </ul>
         </div>
     </section>
 
@@ -3042,13 +2713,46 @@
 
 
 
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="contact-form">
+        <div class="container">
+            <div class="contact-form-content">
+                <h3>Still Got Questions? Let's Chat</h3>
+                <p>Curious about how G'd AI could work for your business? Drop us a line and we'll get back to you within 24 hours.</p>
+                
+                <form class="simple-contact-form" id="simple-contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">What's on your mind?</label>
+                        <textarea id="contact-message" name="message" rows="4" placeholder="Tell us about your business, challenges, or any questions you have..." required></textarea>
+                    </div>
+                    <button type="submit" class="contact-submit-btn">Send Message</button>
+                </form>
+                
+                <div class="contact-success" id="contact-success" style="display: none;">
+                    <div class="success-icon">✅</div>
+                    <h4>Thanks for reaching out!</h4>
+                    <p>We've received your message and will get back to you within 24 hours. In the meantime, feel free to book a chat using the link above if you'd like to discuss your needs right away.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-links">
                 <a href="terms-privacy.html">Terms & Privacy</a>
                 <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-copy">
                 © 2025 G'd AI Mate. All rights reserved.
@@ -3958,6 +3662,7 @@
                     currentTime: currentTime
                 }
             };
+            console.log('Calculator data updated:', window.calculatorData);
         }
 
         function showDetailedResults() {
@@ -3979,6 +3684,7 @@
             document.getElementById('life-weeks-cta').textContent = Math.max(weeksOfLifeBack, 1) + ' weeks';
 
             // Calculate and display tradie equivalents
+            console.log('About to call calculateTradieEquivalents with data:', window.calculatorData);
             calculateTradieEquivalents();
 
             // Update trajectory chart with actual data
@@ -3995,29 +3701,29 @@
 
         function calculateTradieEquivalents() {
             const data = window.calculatorData;
+            console.log('calculateTradieEquivalents called with data:', data);
             
-            // Aussie prices and conversions
-            const beerHour = 2; // Hours of relaxation per hour saved
-            const piePrice = 6; // $6 per meat pie
-            const fishingMultiplier = 12; // Assume 1 saved hour = potential for fishing
-            const weekendsPerYear = 52;
-            const hawaiiFlightCost = 2200; // Average return flight to Hawaii from Australia
+            // Fixed calculations as per user specifications
+            const piePrice = 5; // $5 per meat pie
+            const hawaiiFlightCost = 3000; // $3000 per return flight to Hawaii
             
-            // Calculate equivalents using different time periods for variety
-            const beerHours = Math.round(data.weeklySavings * beerHour * 4.33); // Monthly
-            const piesPerYear = Math.round(data.annualRevenue / piePrice); // Annual
-            const fishingHoursPerYear = Math.round(data.weeklySavings * 52); // Annual
-            const weeklySavingsForEnjoyment = Math.round(data.monthlyRevenue / 4.33); // Weekly enjoyment money
-            const daysAwayFromComputer = Math.round(data.weeklySavings * 52 / 8); // Convert hours to days (8-hour workdays)
-            const hawaiiFlights = Math.round(data.annualRevenue / hawaiiFlightCost); // Annual
-            const weeksOfLifeBack = Math.round(data.weeklySavings * 52 * 3 / 40); // 3 years, assuming 40-hour work weeks
+            // Calculate equivalents with correct formulas
+            const beerHours = Math.round(data.weeklySavings * 4.33); // Hours per month saved
+            const piesPerYear = Math.floor(data.annualRevenue / piePrice); // Annual growth potential / $5, rounded down
+            const fishingHoursPerYear = Math.round(data.weeklySavings * 52); // Total hours saved per year
+            const weeklySavingsForEnjoyment = Math.round(data.annualRevenue / 52); // Annual growth potential / 52 weeks
+            const hawaiiFlights = Math.floor(data.annualRevenue / hawaiiFlightCost); // Annual growth potential / $3000, rounded down
+            const weeksOfLifeBack = Math.round((data.weeklySavings * 52 * 3) / 40); // (Hours saved per year * 3 years) / 40 hours per week
+            
+            console.log('Calculated values:', {
+                beerHours, piesPerYear, fishingHoursPerYear, weeklySavingsForEnjoyment, hawaiiFlights, weeksOfLifeBack
+            });
             
             // Update displays
             document.getElementById('beer-equivalent').textContent = beerHours;
             document.getElementById('pie-equivalent').textContent = piesPerYear.toLocaleString();
             document.getElementById('fishing-equivalent').textContent = fishingHoursPerYear;
             document.getElementById('enjoyment-equivalent').textContent = '$' + weeklySavingsForEnjoyment.toLocaleString();
-            document.getElementById('computer-equivalent').textContent = Math.max(daysAwayFromComputer, 1);
             document.getElementById('hawaii-equivalent').textContent = Math.max(hawaiiFlights, 1);
             document.getElementById('life-equivalent').textContent = Math.max(weeksOfLifeBack, 1);
         }
@@ -4054,6 +3760,12 @@
         // Initialize calculator on page load
         document.addEventListener('DOMContentLoaded', function() {
             updateCalculator();
+            // Also calculate tradie equivalents on page load
+            setTimeout(function() {
+                if (window.calculatorData) {
+                    calculateTradieEquivalents();
+                }
+            }, 100);
         });
 
         // Add some CSS for the calculator elements
@@ -4653,8 +4365,9 @@
                     text-align: center;
                     margin: 50px 0 30px 0;
                     padding: 40px 30px;
-                    background: linear-gradient(135deg, rgba(242, 178, 48, 0.1) 0%, rgba(0, 50, 77, 0.05) 100%);
+                    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 20, 30, 0.9) 100%);
                     border-radius: 20px;
+                    opacity: 0.95;
                 }
 
                 .choice-container {
