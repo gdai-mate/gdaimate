@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - G'd AI Mate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #00324D;
+            background-color: #FCFCFA;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(252, 252, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 50, 77, 0.1);
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            width: 140px;
+            height: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #00324D;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #F2B230;
+        }
+
+        /* About Content */
+        .about-header {
+            padding: 60px 0 40px 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .about-header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #00324D;
+        }
+
+        .about-content {
+            padding: 60px 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .founder-section {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .founder-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #F2B230;
+            box-shadow: 0 8px 30px rgba(0, 50, 77, 0.1);
+        }
+
+        .founder-section div {
+            flex: 1;
+        }
+
+        .founder-section h3 {
+            color: #00324D;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #00324D;
+            color: #FCFCFA;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid rgba(252, 252, 250, 0.1);
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #FCFCFA;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            color: #F2B230;
+        }
+
+        .footer-copy {
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 767px) {
+            .nav-links {
+                display: none;
+            }
+
+            .about-header h1 {
+                font-size: 2rem;
+            }
+
+            .founder-section {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .founder-photo {
+                width: 150px;
+                height: 150px;
+                margin: 0 auto;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">
+                <img src="assets/logo.svg" alt="G'd AI Mate logo" class="logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact">Calculator</a></li>
+                <li><a href="index.html#benefits">Benefits</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="about-header">
+        <div class="container">
+            <h1>About G'd AI Mate</h1>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="founder-section">
+                <img src="assets/2024.05.06_Asgard_Studio_2_0459.jpg" alt="Asgard Bishop, Founder of G'dai Mate" class="founder-photo">
+                <div>
+                    <h3><strong>G'dai Mate — taking care of the tough stuff.</strong></h3>
+                    <p>Founded in 2025 by Queensland entrepreneur Asgard Bishop</p>
+                    <p>G'dai Mate is on a mission to revolutionize how Australia's tradies work. G'dai Mate was born on real job sites where builders were losing nights and weekends to paperwork instead of craftsmanship.</p>
+                </div>
+            </div>
+            
+            <p>Today, G'dai Mate turns cutting‑edge voice technology and large‑language models into simple user interfaces. Speak your site data once and within seconds it becomes polished quotes, safety docs, real‑time dashboards and invoices that slot straight into the software you already use. No bloated systems - just the information you need, exactly when you need it.</p>
+            
+            <p>Our mission is clear: give every small tradie team the power of a full‑time data department (without the price tag) so you can get back to building and still make knock‑off. When we're not refining AI pipelines, you'll find us surfing the Sunshine Coast or mentoring founders on ethical automation, because balance matters as much as productivity.</p>
+            
+            <p>With G'dai Mate taking care of the tough stuff, Australia's tradies can focus on what they do best: building our communities while still enjoying their evenings.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="terms-privacy.html">Terms & Privacy</a>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-copy">
+                © 2025 G'd AI Mate. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
